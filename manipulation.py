@@ -31,4 +31,3 @@ five_letter_word = first_three_letters + last_two_letters
 
 # Displaying five letter word
 print(f"Five-letter word: {five_letter_word}")
-
