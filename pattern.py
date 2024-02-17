@@ -7,7 +7,7 @@ max_stars_row = 5
 # Range is decide  1 to 10 according to the maximum length of stars in a row of the pattern
 
 for i in range(1 ,10):
-    print(f"iteration:{i} number_of_stars:{(1,10)}")
+    #print(f"iteration:{i} number_of_stars:{(1,10)}")
 
     # Untill i == 5, if statement output the first five rows of the stars pattern
     if i <= max_stars_row:
