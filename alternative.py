@@ -12,10 +12,10 @@ def alternate_char(string):
     for i, char in enumerate(string):
       # If the index is even, change character into upper case.
       if i % 2 == 0:
-        result = " ".join([result, char.upper()])
+        result = "".join([result, char.upper()])
       # If the index is not even, change character into lower case.
       else:
-        result = " ".join([result, (char.lower())])
+        result = "".join([result, (char.lower())])
     return result             
 
 def alternate_word(string):
