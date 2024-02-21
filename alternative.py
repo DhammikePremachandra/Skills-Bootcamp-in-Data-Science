@@ -9,13 +9,13 @@ def alternate_char(string):
     Function to alternate the case of characters in the input string.
     """
     result = " "
-    for i in range(len(string)):
+    for i, char in enumerate(string):
       # If the index is even, change character into upper case.
       if i % 2 == 0:
-        result += string[i].upper()
+        result = " ".join([result, char.upper()])
       # If the index is not even, change character into lower case.
       else:
-        result += string[i].lower()
+        result = " ".join([result, (char.lower())])
     return result             
 
 def alternate_word(string):
