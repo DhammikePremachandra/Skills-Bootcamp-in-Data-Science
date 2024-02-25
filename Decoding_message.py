@@ -1,3 +1,19 @@
+"""Decode(message_file): This function extracts the secret message 
+  #hidden in the file and prints it. It calls the extract_message() 
+  #function to get the secret message by passing the dictionary 
+  #returned by the extract_data() function.
+  
+  #Extract_data(message_file): This function reads the data from the 
+  #file and returns a dictionary containing the key-value pairs 
+  #extracted from the file. Each line in the file is split into key and
+  #value pairs based on the space delimiter.
+  
+  #Extract_message(data_dict): This function extracts the secret 
+  #message (values of the dictionary) hidden in the file based on the
+  #keys of the dictionary. The keys are arranged in ascending order,
+  #forming a pyramid structure. The function iterates through the
+  #dictionary keys according to the pyramid structure and concatenates 
+  #the corresponding values to form the secret message."""
 def decode(message_file):
     """Extract the secret message hidden on the file and output it."""
     secret_message = extract_message(extract_data(message_file))
@@ -22,7 +38,7 @@ def extract_data(message_file):
                 # Update the dictionary with the key-value pair.
                 data_dict[key] = value
             else:
-                # Outout Ignoring message if the line dosen't have a
+                # Output Ignoring message if the line doesn't have a
                 # delimiter.
                 print(f"Ignoring line without delimiter: {line.strip()}")
     return data_dict
